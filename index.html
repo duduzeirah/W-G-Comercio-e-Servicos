@@ -59,9 +59,9 @@
             object-fit: cover;
         }
 
-        /* Mantendo a logo legível no fundo preto */
+        /* Removido o filtro invert pois agora a logo já é adequada ou colorida */
         .logo-img {
-            filter: brightness(0) invert(1);
+            display: block;
         }
     </style>
 </head>
@@ -70,13 +70,14 @@
     <!-- Barra de Navegação -->
     <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
         <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
-            <!-- LOGO WG CORRETA CONFORME SOLICITADO -->
-            <img src="images/logowg.jpeg" alt="Logotipo WG Comércio" class="h-10 md:h-12 logo-img" onerror="this.src='https://via.placeholder.com/200x80?text=WG+Comercio'">
+            <!-- LOGO DA LOJA ATUALIZADA -->
+            <img src="images/logowgsemfundo.png" alt="Logotipo WG Comércio" class="h-10 md:h-12 logo-img" onerror="this.src='https://via.placeholder.com/200x80?text=WG+Comercio'">
             <div class="hidden md:flex items-center gap-6">
                 <div class="flex items-center gap-2 text-xs font-bold text-green-500 uppercase">
                     <i class="fa-solid fa-check-double"></i> Loja Oficial
                 </div>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Logo-mercadolivre.svg" class="h-6" alt="Mercado Livre">
+                <!-- LOGO DO MERCADO LIVRE ATUALIZADA -->
+                <img src="images/mercadolivrelogo.png" class="h-8" alt="Mercado Livre" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/b/b3/Logo-mercadolivre.svg'">
             </div>
         </div>
     </nav>
@@ -97,7 +98,6 @@
             <!-- PRODUTO 1: ACER -->
             <div class="glass-card rounded-[2rem] overflow-hidden flex flex-col">
                 <div class="relative">
-                    <!-- FOTO NOTEBOOK ACER CONFORME SOLICITADO -->
                     <img src="images/notebookace.jpeg" alt="Notebook Acer A315" class="product-image w-full" onerror="this.src='https://via.placeholder.com/600x400?text=Notebook+Acer'">
                     <div class="absolute top-4 left-4 badge-ml">OFERTA DO DIA</div>
                 </div>
@@ -114,7 +114,7 @@
                         </div>
                         
                         <a href="https://www.mercadolivre.com.br/notebook-acer-a315-ci5/up/MLBU3900251328?pdp_filters=item_id%3AMLB4598288245&matt_tool=38524122#origin=share&sid=share&wid=MLB4598288245&action=copy" target="_blank" class="btn-ml flex items-center justify-center gap-3 w-full py-5 rounded-2xl font-800 uppercase text-sm tracking-widest text-white shadow-xl">
-                            <img src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.19.1/mercadolivre/favicon.svg" class="w-5 h-5" alt="ML Icon">
+                            <img src="images/mercadolivrelogo.png" class="w-5 h-5 object-contain" alt="ML Icon" onerror="this.src='https://http2.mlstatic.com/frontend-assets/ui-navigation/5.19.1/mercadolivre/favicon.svg'">
                             Ir para Mercado Livre
                         </a>
                     </div>
@@ -124,7 +124,6 @@
             <!-- PRODUTO 2: SAMSUNG -->
             <div class="glass-card rounded-[2rem] overflow-hidden flex flex-col">
                 <div class="relative">
-                    <!-- FOTO NOTEBOOK SAMSUNG CONFORME SOLICITADO -->
                     <img src="images/notebooksamsung.jpeg" alt="Notebook Samsung Galaxy" class="product-image w-full" onerror="this.src='https://via.placeholder.com/600x400?text=Notebook+Samsung'">
                     <div class="absolute top-4 left-4 badge-ml">MAIS VENDIDO</div>
                 </div>
@@ -141,7 +140,7 @@
                         </div>
                         
                         <a href="https://www.mercadolivre.com.br/notebook-samsung-galaxy-book-go-snap-7c-14-fhd4gb128gb/up/MLBU3890188857?pdp_filters=item_id%3AMLB6604176022&matt_tool=38524122#origin=share&sid=share&wid=MLB6604176022&action=copy" target="_blank" class="btn-ml flex items-center justify-center gap-3 w-full py-5 rounded-2xl font-800 uppercase text-sm tracking-widest text-white shadow-xl">
-                            <img src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.19.1/mercadolivre/favicon.svg" class="w-5 h-5" alt="ML Icon">
+                            <img src="images/mercadolivrelogo.png" class="w-5 h-5 object-contain" alt="ML Icon" onerror="this.src='https://http2.mlstatic.com/frontend-assets/ui-navigation/5.19.1/mercadolivre/favicon.svg'">
                             Ir para Mercado Livre
                         </a>
                     </div>
@@ -151,7 +150,6 @@
             <!-- PRODUTO 3: TV AOC -->
             <div class="glass-card rounded-[2rem] overflow-hidden flex flex-col">
                 <div class="relative">
-                    <!-- FOTO TV AOC -->
                     <img src="images/tvoac.jpeg" alt="Smart TV AOC 50" class="product-image w-full" onerror="this.src='https://via.placeholder.com/600x400?text=Smart+TV+AOC'">
                     <div class="absolute top-4 left-4 badge-ml text-black bg-white">4K ULTRA HD</div>
                 </div>
@@ -168,7 +166,7 @@
                         </div>
                         
                         <a href="https://www.mercadolivre.com.br/smart-tv-aoc-50--4k-uhd-com-sistema-roku-tv/up/MLBU3891645005?pdp_filters=item_id%3AMLB4601539043&matt_tool=38524122#origin=share&sid=share&wid=MLB4601539043&action=copy" target="_blank" class="btn-ml flex items-center justify-center gap-3 w-full py-5 rounded-2xl font-800 uppercase text-sm tracking-widest text-white shadow-xl">
-                            <img src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.19.1/mercadolivre/favicon.svg" class="w-5 h-5" alt="ML Icon">
+                            <img src="images/mercadolivrelogo.png" class="w-5 h-5 object-contain" alt="ML Icon" onerror="this.src='https://http2.mlstatic.com/frontend-assets/ui-navigation/5.19.1/mercadolivre/favicon.svg'">
                             Ir para Mercado Livre
                         </a>
                     </div>
@@ -178,7 +176,6 @@
             <!-- PRODUTO 4: JBL -->
             <div class="glass-card rounded-[2rem] overflow-hidden flex flex-col">
                 <div class="relative">
-                    <!-- FOTO JBL BOOMBOX CONFORME SOLICITADO -->
                     <img src="images/boombox4.jpeg" alt="JBL Boombox 4" class="product-image w-full" onerror="this.src='https://via.placeholder.com/600x400?text=JBL+Boombox'">
                     <div class="absolute top-4 left-4 badge-ml">ORIGINAL</div>
                 </div>
@@ -195,7 +192,7 @@
                         </div>
                         
                         <a href="https://www.mercadolivre.com.br/caixa-of-som-jbl-boombox-4-portatil-bluetooth-azul/up/MLBU3891640959?pdp_filters=item_id%3AMLB6606891732&matt_tool=38524122#origin=share&sid=share&wid=MLB6606891732&action=copy" target="_blank" class="btn-ml flex items-center justify-center gap-3 w-full py-5 rounded-2xl font-800 uppercase text-sm tracking-widest text-white shadow-xl">
-                            <img src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.19.1/mercadolivre/favicon.svg" class="w-5 h-5" alt="ML Icon">
+                            <img src="images/mercadolivrelogo.png" class="w-5 h-5 object-contain" alt="ML Icon" onerror="this.src='https://http2.mlstatic.com/frontend-assets/ui-navigation/5.19.1/mercadolivre/favicon.svg'">
                             Ir para Mercado Livre
                         </a>
                     </div>
@@ -220,7 +217,7 @@
                 </div>
             </div>
             
-            <img src="images/logowg.jpeg" class="h-8 mx-auto mb-6 logo-img opacity-50" onerror="this.src='https://via.placeholder.com/200x80?text=WG+Comercio'">
+            <img src="images/logowgsemfundo.png" class="h-8 mx-auto mb-6 logo-img opacity-50" onerror="this.src='https://via.placeholder.com/200x80?text=WG+Comercio'">
             <div class="text-[9px] text-gray-600 uppercase tracking-widest leading-loose">
                 WG COMÉRCIO E SERVIÇOS LTDA<br>
                 CNPJ: 03.007.331/0001-41<br>
